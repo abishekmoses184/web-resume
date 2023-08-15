@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,9 +19,9 @@
         <li><a href="#services">Education</a></li>
         <li><a href="#portfolio">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
-        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        <i class="fa-solid fa-xmark" id="close" onclick="closemenu()"></i>
     </ul>
-    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    <i class="fa-solid fa-bars" id="barmenu" onclick="openmenu()"></i>
 </nav>
 <div class="header-text">
     <p>Editor</p>
@@ -37,12 +37,7 @@
             <div class="about-col-2"></div>
             <img src="Images/Abishek Moses J Web.png" alt="">
             <h1 class="sub-title">About Me</h1>
-            <p>Abishek Moses was born in 18/09/2000</p>
-
-            <div class="tab-titles">
-                <p class="tab-links active-link"onclick="opentab('education')">Education</p>
-                <p class="tab-links"onclick="opentab('skills')">Skills</p>
-            </div>
+            <p id="aboutContent">Abishek Moses was born in 18/09/2000</p>
             <div class="tab-contents active-tab" id="education">
                 <ul>
                    
@@ -131,6 +126,7 @@
         <a href="#" class="btn">See More</a>
     </div>
 </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/au18YcAO3no?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay></iframe>
 <!-- --------contact------------------ -->
 <div id="contact">
     <div class="container">
@@ -148,6 +144,7 @@
                 <div>
                     <a href="Images/Abishekl Moses Resume.pdf" download class="btn btn2">Download Resume</a>
                 </div>
+                </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Enter your name" required>
@@ -158,7 +155,6 @@
                     <span id="msg"></span>
                 </div>
             </div>
-        </div>
         <div class="copyright">
             <p>copyright ©  Abishek Moses J</p>
         </div>
