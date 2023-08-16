@@ -16,13 +16,19 @@ body{
     height: 100%;
     background-image: url(Images/Abishek\ Moses\ J\ Web\ D.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 900px 700px;
     background-attachment: scroll;
-    background-position: center;
+    background-position: 400px 0;
     position: relative;
 }
 .container{
     padding: 10px 10%;
+}
+iframe{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
 }
 nav{
     display: flex;
@@ -161,6 +167,11 @@ margin-top: 20px;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
+.services-list img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
 .services-list div i{
     font-size: 50px;
     margin-bottom: 30px;
@@ -180,11 +191,6 @@ margin-top: 20px;
 .services-list div:hover{
     background: #a70404;
     transform: translateY(-10px);
-}
-.services-list img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
 }
 /* ------------------portfolio---------------- */
 #portfolio{
@@ -241,6 +247,15 @@ margin-top: 20px;
     border-radius: 50%;
     text-align: center;
 }
+#aboutContent{
+    position: absolute;
+    right: 250px;
+    top: 850px;
+}
+
+#barmenu, #close{
+    display: none;
+}
 .work:hover img{
     transform: scale(1.1);
 }
@@ -256,7 +271,7 @@ margin-top: 20px;
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
-    transition: background 0.5s;
+    transition: background-color 0.5s;
 }
 .btn:hover{
     background: #ff0000;
@@ -331,7 +346,7 @@ nav .fas{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
+@media (max-width: 600px){
     #header{
         background-image: url(Images/Abishek\ Moses\ J\ Web\ M.png);
     }
@@ -347,7 +362,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #ff0000;
+        background-color: #ff0000;
         position: fixed;
         top: 0;
         right: 0px;
@@ -357,41 +372,47 @@ nav .fas{
         z-index: 2;
         transition: right 0.5s;
     }
-    nav ul li{
+    
+    #barmenu{
         display: block;
-        margin: 25px;
     }
-    nav ul .fas{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
+    nav ul li{          
+        display: block;          
+        margin: 25px;          
     }
-    .sub-title{
-        font-size: 40px;
+    nav ul .fas{          
+        position: absolute;          
+        top: 25px;          
+        left: 25px;          
+        cursor: pointer;          
     }
-    .about-col-1, .about-col-2{
-        flex-basis: 100%;
+    .sub-title{          
+        font-size: 40px;          
     }
-    .about-col-1{
-        margin-bottom: 30px;
+    .about-col-1, .about-col-2{          
+        flex-basis: 100%;          
     }
-    .about-col-2{
-        font-size: 14px;
+    .about-col-1{          
+        margin-bottom: 30px;          
     }
-    .tab-links{
-        font-size: 16px;
-        margin-right: 20px;
+    .about-col-2{          
+        font-size: 14px;          
     }
-    .contact-left, .contact-right{
-        flex-basis: 100%;
+    .tab-links{          
+        font-size: 16px;          
+        margin-right: 20px;          
     }
-    .copyright{
-        font-size: 14px;
+    .contact-left, .contact-right{          
+        flex-basis: 100%;          
+    }
+    .copyright{          
+        font-size: 14px;          
     }
 }
+
+
 #msg{
-    color: #454944;
-    margin-top: -10px;
-    display: block;
+    color: #454944;          
+    margin-top: -10px;          
+    display: block;          
 }
