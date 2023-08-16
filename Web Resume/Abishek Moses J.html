@@ -94,7 +94,7 @@
                                     <a href="#">Learn More</a>
                                 </div>
                                 <div>
-                                    <img src="Images/" class="img">
+                                    <img src="Images/Sivet College.png" class="img">
                                     <h2><li><span>PG (Master of Business Administration)</span><br>SIVET Collage, Gowriwakam (Current)</li></h2>
                                     <p></p>
                                     <a href="#">Learn More</a>
@@ -115,7 +115,7 @@
                     <a href="#"></a>
                 </div>
                 <div class="work">
-                    <img src="Images//pngwing.com.png">
+                    <img src="Images/pngwing.com.png">
                     <div class="layer">
                         <h3><li><span>MS Office</span><br>Wordpad, Excel, Power Point</li></h3>
                         <p></p>
@@ -156,7 +156,7 @@
                 </div>
             </div>
         <div class="copyright">
-            <p>copyright © Abishek Moses J</p>
+            <p>copyright ©  Abishek Moses J</p>
         </div>
     </div>
 
@@ -176,38 +176,38 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab")
 }
 
-</script>
+</script>      
 
-<script>
+<script>      
 
 var sidemenu = document.getElementById("sidemenu")
 
-function openmenu(){
-    sidemenu.style.right = "0"
+function openmenu(){      
+    sidemenu.style.right = "0"      
 }
-function closemenu(){
-    sidemenu.style.right = "-200px"
+function closemenu(){      
+    sidemenu.style.right = "-200px"      
 }
 
 
-</script>
-<script>
+</script>      
+<script>      
     const scriptURL = 'https://script.google.com/macros/library/d/15SjXeZZqCcMfCvyF6Svseg_x2mhKqU1OkQZx8RLz5NXjOAp7xkGn6fVO/1'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
   
     form.addEventListener('submit', e => {
-      e.preventDefault()
+      e.preventDefault()      
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
+        .then(response => {      
             msg.innerHTML = "Message Sent Successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
+            setTimeout(function(){      
+                msg.innerHTML = ""      
+            },5000)      
+            form.reset()      
+        })      
         .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    })      
+  </script>      
 </body>
 </html>
